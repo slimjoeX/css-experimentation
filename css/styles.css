@@ -7,6 +7,8 @@ div.main {
 div.main img {
     width: 100%;
     height: 100%;
+    will-change: transform;
+    transform: rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
 }
 
 div.main > div.part {
@@ -17,6 +19,14 @@ div.main > div.part.top {
     height: 50%;
     top: 0;
 }
+
+div.main > div.part:hover ~ #test {
+    transform: rotateX(0deg) rotateY(0deg) scale3d(1.05, 1.05, 1.05);
+}
+
+/* div.main > div.part.top:hover ~ #test {
+    transform: rotateX(0deg) rotateY(0deg) scale3d(1.05, 1.05, 1.05);
+} */
 
 div.main > div.part.bottom {
     height: 50%;
