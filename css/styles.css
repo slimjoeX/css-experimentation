@@ -1,0 +1,34 @@
+div.main {
+    width: 450px;
+    height: 80px;
+    position: relative;
+}
+
+div.main img {
+    width: 100%;
+    height: 100%;
+}
+
+div.main > div.part {
+    position: absolute;
+}
+
+div.main > div.part.top {
+    height: 50%;
+    top: 0;
+}
+
+div.main > div.part.bottom {
+    height: 50%;
+    top: 50%;
+}
+
+div.main > div.part.left {
+    width: 50%;
+    left: 0;
+}
+
+div.main > div.part.right {
+    width: 50%;
+    left: 50%;
+}
